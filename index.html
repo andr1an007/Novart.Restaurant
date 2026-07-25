@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Novart</title>
+</head>
+
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="#about">About Us</a>
+      <a href="#halls">Halls</a>
+      <a href="#menu">Menu</a>
+      <a href="#events">Events</a>
+      <a href="#contacts">Contact</a>
+    </nav>
+
+    <a href="#top"><img class="logo" src="img/logo-trans.png" alt=""></a>
+
+    <div class="headtext">
+      <p>+38 098 742 380 7</p>
+      <p>26 Soborna Square, Lviv, Ukraine</p>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<body>
+  <section id="top" class="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="🖕🖕🖕🖕🖕🖕🖕🖕">
+      <source src="img/video2.0.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <h1><strong>Taste That Brings Hearts Together</strong></h1>
+      <p>Restaurant · Bar · Events</p>
+    </div>
+  </section>
+
+
+  <div class="container">
+    <section id="about" class="content-section">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about1">
+            <h1>About Novart</h1>
+            <p><strong>Address:</strong> 26 Soborna Square, Lviv, Ukraine</p>
+            <p><strong>Make a Reservation:</strong> +38 098 742 380 7</p>
+            <p><strong>Opening Hours:</strong> 11:00 AM – 11:00 PM</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about2">
+            <p><strong>Novart is a place you'll fall in love with, right in the heart of Lviv!</strong></p>
+            <p>From romantic dinners with breathtaking panoramic views to birthday celebrations and elegant weddings,
+              Novart is the perfect setting for every special occasion.</p>
+          </div>
+        </div>
+      </div>
+      <div class="aboutfoto">
+        <div class="row g-3">
+          <div class="col-md-8">
+            <img src="img/about1.png" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="img/about2.png" alt="">
+          </div>
+
+          <div class="col-md-4">
+            <img src="img/about3.png" alt="">
+          </div>
+          <div class="col-md-8">
+            <img src="img/about4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <section id="halls" class="halls-section py-5 bg-dark text-white">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="our">
+          <h2 class="mb-0">Our Halls</h2>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="slider-btn" id="prevHall" aria-label="Попередній зал">
+            ←
+          </button>
+          <button class="slider-btn" id="nextHall" aria-label="Наступний зал">
+            →
+          </button>
+        </div>
+      </div>
+
+      <div class="halls-scroll" id="hallsScroll">
+        <article class="hall-card js-hall" data-bs-toggle="modal" data-bs-target="#hallModal"
+          data-title="Panoramic Hall"
+          data-description="Enjoy breathtaking panoramic views of Lviv at night, exquisite cuisine, and a unique atmosphere that invites you to linger a little longer. It's the perfect place to slow down, share meaningful moments with loved ones, and savor every minute. As dusk settles over the city and the lights begin to glow, the space transforms into the perfect setting for the unforgettable Cloud Evening Show."
+          data-images="img/PanoramaHall1.png,img/PanoramaHall2.png,img/PanoramaHall3.png">
+          <img src="img/PanoramaHall.png" alt="">
+          <div class="hall-card__content">
+            <h3>Panoramic Hall</h3>
+          </div>
+        </article>
+
+        <article class="hall-card js-hall" data-bs-toggle="modal" data-bs-target="#hallModal"
+          data-title="Summer Terrace"
+          data-description="Whether you're enjoying breakfast with a view of the city, a relaxed lunch, a romantic dinner, or an open-air party under the stars, every occasion has its own unique atmosphere here. For larger groups, we've created cozy lounge areas with comfortable sofas, while intimate tables for two are perfect for quieter moments.
+          This space is designed for unforgettable experiences. The stunning panorama of Lviv is sure to capture your attention and earn a place in your stories. Our Summer Terrace is also an ideal venue for lively celebrations, and for larger events, multiple halls can be combined to accommodate up to 200 guests. There's plenty of space—and unforgettable moments—for everyone."
+          data-images="img/SummerTerrace1.png,img/SummerTerrace2.png,img/SummerTerrace3.png">
+          <img src="img/SummerTerrace.png" alt="">
+          <div class="hall-card__content">
+            <h3>Summer Terrace</h3>
+          </div>
+        </article>
+
+        <article class="hall-card js-hall" data-bs-toggle="modal" data-bs-target="#hallModal" data-title="Banquet Hall"
+          data-description="A space for celebrations you'll remember for years to come. Whether it's a birthday, wedding, corporate event, or any special occasion, this is the perfect place to create a stylish and unforgettable celebration.
+          The elegant yet understated interior enhances the festive atmosphere with marble tables, comfortable modern chairs, lush greenery, and a striking ceiling that serves as the hall's signature feature. Every detail has been carefully designed to ensure your comfort and create an exceptional experience."
+          data-images="img/BanquetHall1.png,img/BanquetHall2.png,img/BanquetHall3.png">
+          <img src="img/BanquetHall.png" alt="">
+          <div class="hall-card__content">
+            <h3>Banquet Hall</h3>
+          </div>
+        </article>
+
+        <article class="hall-card js-hall" data-bs-toggle="modal" data-bs-target="#hallModal" data-title="Bar Lounge"
+          data-description="This lounge brings the feeling of endless summer to life with vibrant music, dancing, and the energy of a true tropical escape. It's the perfect place to gather with friends or colleagues, unwind, have fun, and leave everyday worries behind.
+          Sing your favorite songs at karaoke or simply enjoy the music while the unique interior adds a distinctive touch to your evening. Sculptures of titans seemingly supporting the mirrored ceiling, a stone floor, and bold architectural details create an extravagant atmosphere. And, of course, it's the perfect spot to capture stunning photos for Instagram."
+          data-images="img/BarHall1.png,img/BarHall2.png,img/BarHall3.png">
+          <img src="img/BarHall.png" alt="">
+          <div class="hall-card__content">
+            <h3>Bar Lounge</h3>
+          </div>
+        </article>
+
+        <article class="hall-card js-hall" data-bs-toggle="modal" data-bs-target="#hallModal" data-title="Lounge Area"
+          data-description="It always feels like summer here, with lively music, dancing, and the vibrant energy of a tropical party. Gather your friends or colleagues, reserve a table, and enjoy an evening filled with unforgettable moments—karaoke, your favorite songs, and countless reasons to celebrate.
+          The space stands out with its extravagant interior: towering titan sculptures that appear to support the mirrored ceiling, a stone floor, and striking architectural details create a truly unique atmosphere. And, of course, it's the perfect place to capture eye-catching photos you'll want to share on Instagram."
+          data-images="img/LoungeZone1.png,img/LoungeZone2.png,img/LoungeZone3.png">
+          <img src="img/LoungeZone.png" alt="">
+          <div class="hall-card__content">
+            <h3>Lounge Area</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="menu" class="content-section">
+    <div class="container">
+      <div class="menu">
+        <h1>Novart Menu</h1>
+        <p>Discover exquisite dishes inspired by flavors from around the world, thoughtfully crafted to delight every
+          guest. Our menu combines bold flavors, premium ingredients, and creative presentation, turning every meal into
+          a memorable dining experience. To complete the journey, explore our extensive wine collection, carefully
+          curated by expert sommeliers. Here, every bottle has its own unique character, perfectly complementing the
+          flavors of our cuisine.</p>
+      </div>
+    </div>
+    <div class="container-fluid px-lg-5">
+      <div class="venues-track" id="venuesTrack">
+        <article class="venue-item">
+          <img src="img/Menu.png" alt="Panorama Hall">
+          <div class="venue-info">
+            <h3>Menu</h3>
+          </div>
+        </article>
+
+        <article class="venue-item">
+          <img src="img/MenuBar.png"" alt=" Літня тераса">
+          <div class="venue-info">
+            <h3>Bar</h3>
+          </div>
+        </article>
+
+        <article class="venue-item">
+          <img src="img/MenuWine.png"" alt=" Бенкетний зал">
+          <div class="venue-info">
+            <h3>Wine</h3>
+          </div>
+        </article>
+
+        <article class="venue-item">
+          <img src="img/MenuHookah.png"" alt=" Vocal Bar Karaoke">
+          <div class="venue-info">
+            <h3>Hookah</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="events" class="content-section">
+    <div class="container">
+      <div class="events__head text-center">
+        <h2>Events at Novart</h2>
+        <p>From exclusive wine tastings to unforgettable parties and special events, there's always something happening
+          at Novart. Join us and create memorable moments together.</p>
+      </div>
+
+      <div class="row g-4 g-lg-5">
+        <div class="col-md-6 col-lg-4">
+          <article class="event">
+            <div class="event__poster">
+              <img class="event__logo" src="img/logo-trans.png" alt="">
+              <div class="event__time">11 August <span>•</span> 8:00 PM</div>
+              <img class="event__photo" src="img/Dorofejova.jpg" alt="">
+              <div class="event__artist">Nadia Dorofeeva</div>
+              <div class="event__reserve">
+                <span>Reserve: +38 098 742 380 7</span>
+                <small>Limited Seating Available</small>
+              </div>
+            </div>
+            <div class="event__info">
+              <div class="event__date">11 August</div>
+              <h3>Musical Tuesday with Nadia Dorofeeva</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="event">
+            <div class="event__poster">
+              <img class="event__logo" src="img/logo-trans.png" alt="">
+              <div class="event__time">14 August <span>•</span> 7:30 PM</div>
+              <img class="event__photo" src="img/RomaFakts2.0.jpg" alt="">
+              <div class="event__artist">Roma Fakts</div>
+              <div class="event__reserve">
+                <span>Reserve: +38 098 742 380 7</span>
+                <small>Limited Seating Available</small>
+              </div>
+            </div>
+            <div class="event__info">
+              <div class="event__date">14 August</div>
+              <h3>Friday Beats with Roma Fakts</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="event">
+            <div class="event__poster">
+              <img class="event__logo" src="img/logo-trans.png" alt="">
+              <div class="event__time">22 August <span>•</span> 10:00 PM</div>
+              <img class="event__photo" src="img/Olega.jpg" alt="">
+              <div class="event__artist">Oleh Vynnyk</div>
+              <div class="event__reserve">
+                <span>Reserve: +38 098 742 380 7</span>
+                <small>Limited Seating Available</small>
+              </div>
+            </div>
+            <div class="event__info">
+              <div class="event__date">22 August</div>
+              <h3>Unforgettable Saturday with Oleh Vynnyk</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container-fluid py-4">
+    <div class="photo-grid">
+      <img src="img/PanoramaHall2.png" alt="">
+      <img src="img/LastFoto2.png" alt="">
+      <img src="img/LoungeZone3.png" alt="">
+      <img src="img/LastFoto4.png" alt="">
+      <img src="img/LastFoto5.png" alt="">
+      <img src="img/LastFoto6.png" alt="">
+    </div>
+    <div class="photo-ggrid">
+      <img src="img/LastFoto7.png" alt="">
+      <img src="img/SummerTerrace3.png" alt="">
+      <img src="img/LastFoto9.png" alt="">
+      <img src="img/LastFoto10.png" alt="">
+      <img src="img/BarHall3.png" alt="">
+    </div>
+  </div>
+
+
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer-content text-center">
+        <h2 class="footer-title">Contact Us</h2>
+        <p class="footer-contakt">+38 098 742 380 7</p>
+        <p class="footer-address">26 Soborna Square, Lviv, Ukraine</p>
+        <p class="footer-contakt">novart.restourant@gmail.com</p>
+        <p class="footer-hours">Opening Hours: 11:00 - 23:00 Open Daily</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="tel:+38 098 742 380 7" aria-label="Facebook">
+            <i class="fa-solid fa-phone-volume"></i>
+          </a>
+          <a href="mailto:novart.restourant@gmail.com" aria-label="Facebook">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© 2026 Novart</small>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="WinModal">
+    <div class="modal fade hall-modal" id="hallModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <button type="button" class="btn-close btn-close-white hall-modal__close" data-bs-dismiss="modal"
+            aria-label="Закрити"></button>
+
+          <div class="modal-body container">
+            <div class="row align-items-center g-5 min-vh-100 py-5">
+              <div class="col-lg-7">
+                <div id="hallCarousel" class="carousel slide">
+                  <div class="carousel-indicators" id="hallIndicators"></div>
+
+                  <div class="carousel-inner" id="hallImages"></div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#hallCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#hallCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-lg-5 text-white">
+                <h2 id="hallTitle" class="hall-modal__title"></h2>
+                <p id="hallDescription"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</html>
